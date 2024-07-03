@@ -31,7 +31,7 @@ const Navbar = () => {
       {show && (
         <div className="mt-3 shadow-md  h-fit">
           <div>
-            <Menubar />
+            <Menubar setShow={setShow} />
           </div>
         </div>
       )}

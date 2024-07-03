@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { navItems } from "./nav";
 import { Link } from "react-router-dom";
 
-const Menubar = () => {
+const Menubar = ({ setShow }) => {
   return (
     <div className="flex flex-col space-y-2 mt-3 ">
       {navItems.map((item) => (
@@ -13,7 +14,9 @@ const Menubar = () => {
               : "text-black"
           } text-xl font-semibold py-2.5 font-ebgaramond px-4 border-b-[1px] hover:text-[#DC143C]`}
         >
-          <Link to={item.link}>{item.label}</Link>
+          <Link onClick={() => setShow(false)} to={item.link}>
+            {item.label}
+          </Link>
         </div>
       ))}
     </div>

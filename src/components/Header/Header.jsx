@@ -44,7 +44,7 @@ const Header = () => {
             </div>
           </div>
           <Link
-            to={"/"}
+            to={"/my-account"}
             className="text-base uppercase font-ebgaramond font-medium"
           >
             My Account
