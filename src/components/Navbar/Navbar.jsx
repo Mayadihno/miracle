@@ -7,7 +7,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-full h-fit md:px-32 px-5">
+      <div className="w-full h-fit md:px-32 px-5 pb-5 md:pb-0 shadow-xl">
         <div className="flex justify-between items-center md:pt-0 pt-3">
           <div className="w-[80px] md:h-[80px] ">
             <img

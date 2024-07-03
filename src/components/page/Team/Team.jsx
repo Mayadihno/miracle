@@ -60,9 +60,11 @@ const Team = () => {
                         <h3 className="text-lg font-medium">{item.role}</h3>
                       </div>
                       <p className="text-sm line-clamp-3">{item.about}</p>
-                      <div className=" py-1 bg-[#DC143C] my-2 text-white text-center">
-                        <Link to={`/our-team/${item.name}`}>Read more</Link>
-                      </div>
+                      <Link to={`/our-team/${item.name}`}>
+                        <div className="py-1 bg-[#DC143C] mt-3 text-white text-center cursor-pointer">
+                          Read more
+                        </div>
+                      </Link>
                     </div>
                   );
                 })}
