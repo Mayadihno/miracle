@@ -1,4 +1,6 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 import { IoLogoYoutube } from "react-icons/io";
 import { CiSearch, CiMenuBurger } from "react-icons/ci";
 import {
@@ -22,4 +24,7 @@ export const ICONS = {
   location: MdOutlineLocationOn,
   eye: GoEye,
   eyelock: GoEyeClosed,
+  x: BsTwitterX,
+  whatsapp: FaWhatsapp,
+  facebook: FaFacebookF,
 };
