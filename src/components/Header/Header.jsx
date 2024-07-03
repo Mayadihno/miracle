@@ -12,9 +12,9 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full h-fit px-32 py-2 border-b-[1px] border-[#dc143c7b]">
-      <div className="flex justify-between items-center">
-        <div className="flex space-x-3">
+    <div className="w-full h-fit md:px-32 px-2 py-2 border-b-[1px] border-[#dc143c7b]">
+      <div className="flex justify-between items-center md:flex-row flex-col">
+        <div className="flex space-x-3 md:pb-0 pb-3">
           <div
             className={`${styles.primary} cursor-pointer rounded-full flex justify-center items-center text-white w-[30px] h-[30px]`}
           >
@@ -26,14 +26,14 @@ const Header = () => {
             <ICONS.youtube size={15} />
           </div>
         </div>
-        <div className="flex space-x-3 items-center">
+        <div className="flex md:space-x-3 space-x-1 items-center">
           <div className="flex">
             <input
               type="search"
               value={search}
               placeholder="Search..."
               onChange={(e) => setSearch(e.target.value)}
-              className="md:w-60 w-full md:h-[45px] h-[35px] bg-transparent border
+              className="md:w-60 w-[80%] md:h-[45px] h-[35px] bg-transparent border
              outline-none px-3 placeholder:text-base placeholder:text-black
              font-ebgaramond font-semibold text-black"
             />
